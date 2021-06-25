@@ -20,4 +20,5 @@
 
 define('TXTDOM', 'wp-block-extend-style-lg');
 
-// register_block_style('core/group', array('name' => 'custom-border', 'label' => __('Custom Borders', 'TXTDOM')));
+register_block_style('core/group', array('name' => 'add-border', 'label' => __('Bordered', 'TXTDOM'), 'inline_style' => '.wp-block-group.is-style-add-border { border: 2px solid gray; }'));
+register_block_style('core/group', array('name' => 'add-shadow', 'label' => __('Drop Shadow', 'TXTDOM'), 'inline_style' => '.wp-block-group.is-style-add-shadow { box-shadow: 0px 7px 27px -12px gray; }'));
